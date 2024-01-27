@@ -1,5 +1,5 @@
 {
-  "name": "material-ui-vite-ts",
+  "name": "lifting.ninja",
   "private": true,
   "version": "5.0.0",
   "type": "module",
@@ -13,14 +13,17 @@
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
+    "@reduxjs/toolkit": "^2.1.0",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-redux": "^9.1.0"
   },
   "devDependencies": {
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@vitejs/plugin-react": "latest",
     "typescript": "latest",
-    "vite": "latest"
+    "vite": "latest",
+    "vite-plugin-pwa": "^0.17.5"
   }
 }
