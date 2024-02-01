@@ -7,3 +7,26 @@ We adhere to git best practice by utilizing branches and pull-requests. You will
 
 
 Work is tracked via a [this kanban board](https://github.com/users/jeff-cannapress/projects/2/views/1)
+
+## Dramatis Personae
+_If all the world’s a stage these are our players_
+* **Bailey** A basic application user. Bailey has not gone through the process of registering and only has access to free / offline app features.
+* **Rachael** a Registered app user. Rachael has access to all Bailey’s features plus online features like coaching from Travis
+* **Prima** A premium user. Prima has all Rachael’s features plus any feature that writes to /our/ storage.
+* **Travis** A personal trainer / Coach. Travis has access to all Prima’s features, plus coaching specific features
+
+#### Conceptual model
+All entities in the system have the following properties
+* `id`: string
+* `name`: string
+* `notes`: string
+* `links`: {title:string, url:string}[]
+
+#### Core entities
+* A `Movement` is the abstract idea of an exercise: What equipment is used, How the movement is supposed to be done,  and how that movement is measured.
+* An `Plan` is a group of Routines
+* A `Routine` is a Collection of Exercises 
+* An `Exercise` is a collection of Sets + rest time
+* A `Set` is a repeated series of a movement including relevant methodology metrics (eg weight and reps)
+* A `Workout` is the record of when a routine is executed including the date and...
+
