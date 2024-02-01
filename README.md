@@ -22,6 +22,7 @@ All entities in the system have the following properties
 * `name`: string
 * `notes`: string
 * `links`: {title:string, url:string}[]
+* `tags`: string[]
 
 #### Core entities
 * A `Movement` is the abstract idea of an exercise: What equipment is used, How the movement is supposed to be done,  and how that movement is measured.
