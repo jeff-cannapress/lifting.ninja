@@ -15,7 +15,8 @@ _If all the world’s a stage these are our players_
 * **Prima** A premium user. Prima has all Rachael’s features plus any feature that writes to /our/ storage.
 * **Travis** A personal trainer / Coach. Travis has access to all Prima’s features, plus coaching specific features
 
-#### Conceptual model
+## Conceptual model
+#### Common Properties
 All entities in the system have the following properties
 * `id`: string
 * `name`: string
