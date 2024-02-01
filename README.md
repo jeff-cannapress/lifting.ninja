@@ -13,7 +13,7 @@ _If all the world’s a stage these are our players_
 * **Bailey** A basic application user. Bailey has not gone through the process of registering and only has access to free / offline app features.
 * **Rachael** a Registered app user. Rachael has access to all Bailey’s features plus online features like coaching from Travis
 * **Prima** A premium user. Prima has all Rachael’s features plus any feature that writes to /our/ storage.
-* **Travis** A personal trainer / Coach. Travis has access to all Prima’s features, plus coaching specific features
+* **Chad** A personal trainer / Coach. Chad has access to all Prima’s features, plus coaching specific features
 
 ## Conceptual model
 #### Common Properties
