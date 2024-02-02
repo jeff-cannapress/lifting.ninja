@@ -1,0 +1,58 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://lifting.ninja/schemas/entity.schema.json",
+    "title": "Entity",
+    "description": "The base entity of the system",
+    "type": "object",
+    "properties": {
+        "id": {
+            "$ref": "#/$defs/entityId"
+        },
+        "name": {
+            "description": "the title or name of the entity",
+            "type": "string"
+        },
+        "notes": {
+            "description": "a longer form text description of the entity",
+            "type": "string"
+        },
+        "links": {
+            "description": "Tags for the entity",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties":{
+                    "title":{
+                        "type":"string"
+                    },
+                    "url":{
+                        "type":"string",
+                        "format":"uri"
+                    }
+                }
+            },
+            "minItems": 1,
+            "uniqueItems": true            
+        },
+        "tags": {
+            "description": "Tags for the entity",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern":""
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    },
+    "required": [
+        "id"
+    ],
+    "$defs": {
+        "entityId":{
+            "description": "the unique identifier of the entity within the system. Ids are of the form `/(ownerId)/(scope)/(entity-type)/(entityId)`. All path-segments are constrained to characters in the alphabet `[A-Za-z0-9_-]`. ownerId and entityId are exectly 8 characters. scope and entity-type are a minimum of 3 characters",
+            "type": "string",
+            "pattern":"^/([A-Za-z0-9_-]{8})/([A-Za-z0-9_-]{3,})/([A-Za-z0-9_-]{3,})/([A-Za-z0-9_-]{8})"            
+        }
+    }
+}

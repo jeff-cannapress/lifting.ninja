@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://lifting.ninja/schemas/entityRef.schema.json",
+    "title": "Entity Reference",
+    "description": "a reference to an different entity within the system",
+    "type": "object",
+    "properties": {
+        "$ref": {
+            "$ref":"/schemas/entity.schema.json/$defs/entityId"
+        }        
+    },
+    "required": [
+        "$ref"
+    ]
+}

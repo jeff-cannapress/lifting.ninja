@@ -1,0 +1,39 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://lifting.ninja/schemas/set",
+    "title": "Entity",
+    "description": "A Set is a repeated series of a movement including relevant methodology metrics (eg weight and reps)",
+    "type": "object",
+    "allOf": [
+        { "$ref":"/schemas/entity"},
+        {
+            "type":"object",
+            "properties":{
+                "movement":{
+                    "anyOf":[
+                        {"$ref":"/schemas/entityRef.schema.json"},
+                        {"$ref":"/schemas/movement.schema.json"}
+                    ]
+                },
+                "target":{
+                    "allOf":[
+                        {"$ref":"/schemas/measurementItem.schema.json"},
+                        {
+                            "type":"object",
+                            "properties":{
+                                "value":{
+                                    "type":"number",
+                                    "minimum":-1
+                                }
+                            },
+                            "required":["value"]
+                        }
+                    ]
+                }
+
+            },
+            "required":["movement"]
+        }
+
+    ]
+}
