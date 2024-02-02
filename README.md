@@ -17,7 +17,7 @@ _If all the world’s a stage these are our players_
 
 ## Conceptual model
 #### Common Properties
-All entities in the system have the following properties
+All entities in the system can have the following properties
 * `id`: string
 * `name`: string
 * `notes`: string
