@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://lifting.ninja/schemas/movement",
+    "$id": "https://lifting.ninja/schemas/movement.schema.json",
     "title": "Entity",
     "description": "A movement is the abstract idea of an exercise: What equipment is used, How the movement is supposed to be done,  and how that movement is measured.",
     "type": "object",

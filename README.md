@@ -16,13 +16,10 @@ _If all the world’s a stage these are our players_
 * **Chad** A personal trainer / Coach. Chad has access to all Prima’s features, plus coaching specific features
 
 ## Conceptual model
-#### Common Properties
-All entities in the system have the following properties
-* `id`: string
-* `name`: string
-* `notes`: string
-* `links`: {title:string, url:string}[]
-* `tags`: string[]
+#### Entities
+#### Composition via EntityRefs
+Entities may be composed via `$ref` properties containing the id of a base entity. When doing so the the base entity is loaded and any properties in the derived entity are copied in, overwriting base entity properites.
+
 
 #### Core entities
 * A `Movement` is the abstract idea of an exercise: What equipment is used, How the movement is supposed to be done,  and how that movement is measured.
